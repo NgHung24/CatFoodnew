@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Thông tin sản phẩm"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_themsp_TenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:ems="13"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thể loại"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/editText_themsp_TheLoai"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:ems="13"/>-->
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioButton_quanlyspthem_ThucAnHat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thức ăn hạt"
+                android:textSize="15sp"
+                android:layout_marginBottom="25dp"
+                />
+            <RadioButton
+                android:id="@+id/radioButton_quanlyspthem_ThucAnUot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thức ăn ướt"
+                android:textSize="15sp"
+                android:layout_marginBottom="25dp"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giá"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/editText_themsp_Gia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:ems="13"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_themsp_SoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:ems="13"
+            />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_themsp_MoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="textMultiLine"
+            android:ems="13"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đường dẫn ảnh"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_themsp_LinkAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginBottom="25dp"
+            android:ems="13"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Button_themsp_XacNhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xác nhận" />
+
+            <Button
+                android:id="@+id/Button_themsp_QuayLai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Quay lại" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

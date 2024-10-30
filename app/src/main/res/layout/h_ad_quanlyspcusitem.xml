@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_quanlyspcusitem_AnhSP"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/adtongmua"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView_quanlyspcusitem_MaSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Mã sản phẩm:" />
+            <TextView
+                android:id="@+id/textView_quanlyspcusitem_TenSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Tên sản phẩm:" />
+            <TextView
+                android:id="@+id/textView_quanlyspcusitem_Gia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FA0A0A"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Giá: 20000đ" />
+            <TextView
+                android:id="@+id/textView_quanlyspcusitem_SoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:text="Số lượng: 10" />
+            <TextView
+                android:id="@+id/textView_quanlyspcusitem_TheLoai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:text="Thể loại: Thức ăn khô" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/button_quanlyspcusitem_Sua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Sửa" />
+            <Button
+                android:id="@+id/button_quanlyspcusitem_Xoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:text="Xóa" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

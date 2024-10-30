@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1d3557"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbt_quaylai"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="#1d3557"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/iconexit" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="5.5"
+                    android:text="QUAY LẠI"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:background="#f1faee"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <ListView
+                android:id="@+id/lv_ctiet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/t_tenchitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên"
+                android:textColor="@color/black"
+                android:textSize="25sp"></TextView>
+
+            <TextView
+                android:id="@+id/t_sdtchitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="So điện thoại"
+                android:textColor="@color/black"
+                android:textSize="25sp"></TextView>
+
+            <TextView
+                android:id="@+id/t_dcchitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ nhâận hàng"
+                android:textColor="@color/black"
+                android:textSize="25sp"></TextView>
+
+            <TextView
+                android:id="@+id/t_emailchitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/t_ptttchitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đã chọn: thanh toán khi nhận hàng"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/t_trangthaichitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trang thai "
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/t_ttchitiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tổng: 10000đ"
+                android:textColor="#e63946"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

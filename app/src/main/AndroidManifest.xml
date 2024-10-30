@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/Theme.CatFood"
+        tools:targetApi="31">
+        <activity
+
+            android:name=".activity.adangNhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.aad_qltaikhoanthem"
+            android:exported="true" />
+        <activity
+            android:name=".activity.h_ad_quanlysp"
+            android:exported="true" />
+        <activity
+            android:name=".activity.h_qualyspthem"
+            android:exported="true" />
+        <activity
+            android:name=".activity.h_quanlyspsua"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.tt_ad_qlydon"
+            android:exported="true" />
+        <activity
+            android:name=".activity.tt_trangcanhan_a"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ttactivity_giohang_acenter"
+            android:exported="true" />
+        <activity
+            android:name=".activity.tt_ad_qlydonchitiet"
+            android:exported="true" />
+        <activity
+            android:name=".activity.tt_h_activity_subitemcenter"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ttactivity_giohang_acenterxacnhan"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.aad_quanlytaikhoanSua"
+            android:exported="false" />
+        <activity
+            android:name=".activity.h_MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.aadminCenter"
+            android:exported="true" />
+        <activity
+            android:name=".activity.aad_qltaikhoan"
+            android:exported="true" />
+        <activity
+            android:name=".activity.tt_trangcanhan_Tongdonmua"
+            android:exported="true" />
+        <activity
+            android:name=".activity.adangkykhach"
+            android:exported="true" />
+        <activity
+            android:name=".activity.aquenmatKhau"
+            android:exported="true" />
+        <activity
+            android:name=".activity.tt_trangcanhan_thongtinchitiet"
+            android:exported="true" />
+    </application>
+
+</manifest>

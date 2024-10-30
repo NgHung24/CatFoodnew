@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0D1D1"
+    android:orientation="vertical"
+    tools:context=".activity.h_MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e63946"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+                android:text="Shop Catfood"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btncanhan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="Cá nhân" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:padding="4dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton_main_TimKiem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/editText_main_TimKiem"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="#D5CCCC" />
+
+            <Button
+                android:id="@+id/btngiohang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:text="Giỏ hàng" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/thumbnailcat1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--            <Button-->
+            <!--                android:id="@+id/button_main_ThucAnHat"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Thức ăn hạt" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_main_ThucAnUot"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="thức ăn ướt" />-->
+            <Spinner
+                android:id="@+id/spinner_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4"
+                android:backgroundTint="#FF5722" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/listView_main_LV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

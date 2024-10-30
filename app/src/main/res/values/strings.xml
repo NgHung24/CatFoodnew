@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CatFood</string>
+
+    <string-array name="trangthai_array">
+        <item>Chờ xác nhận</item>
+        <item>Đã xác nhận</item>
+        <item>Đang giao hàng</item>
+        <item>Đã giao hàng</item>
+        <item>Đã hủy</item>
+    </string-array>
+</resources>
